@@ -15,14 +15,11 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-<<<<<<< HEAD
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels
         super(800, 450, 1);
         showText( "SCORE", 600, 15 );
-=======
-        super(800, 450, 1);  
+        
         addObject( new Goku(), 400,200);
->>>>>>> afe5ed6b2a958776aff5a1b0e90c5aa69e87b393
     }
         public void act() {
         
