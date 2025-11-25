@@ -16,6 +16,21 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(800, 450, 1);  
+        addObject( new Goku(), 400,200);
+    }
+        public void act() {
+        
+        // ランダムにOzyamaを追加（毎フレーム1/100の確率）
+        if (Greenfoot.getRandomNumber(100) == 0) {
+            addObject(new Ozyama(), 800, 440);
+        }
+        
+        // ランダムにOzyamaを追加（毎フレーム1/100の確率）
+        if (Greenfoot.getRandomNumber(100) == 0) {
+            addObject(new Ozyama_up(), 800, 0);
+        }
+
+        
     }
 }
