@@ -14,7 +14,7 @@ public class Ozyama extends Actor
      */
     public void act() 
     {
-        move(-6);
+        move(-3);
         
         int x = getX();
         // x座標が0ならオブジェクトを削除
