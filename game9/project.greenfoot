@@ -2,6 +2,7 @@
 class.A.image=snowman.png
 class.B.image=smiley2.png
 class.C.image=turtle2.png
+<<<<<<< HEAD
 class.Ryu.image=ChatGPT\ Image\ 2025\u5E7411\u670818\u65E5\ 10_23_01.png
 editor.fx.0.height=739
 editor.fx.0.width=816
@@ -10,6 +11,24 @@ editor.fx.0.y=72
 height=585
 package.numDependencies=0
 package.numTargets=5
+=======
+class.MyWorld.image=bg_unkai_yama.jpg
+class.Ozyama.image=ozyama_stone.png
+class.Ozyama_up.image=ozyama_stone_up.png
+dependency1.from=MyWorld
+dependency1.to=Ozyama
+dependency1.type=UsesDependency
+dependency2.from=MyWorld
+dependency2.to=Ozyama_up
+dependency2.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=691
+package.numDependencies=2
+package.numTargets=7
+>>>>>>> b95dfbc311a888923a4ebc0ae5f10f0393a732b3
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -23,44 +42,75 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
+<<<<<<< HEAD
 simulation.speed=57
+=======
+simulation.speed=51
+>>>>>>> b95dfbc311a888923a4ebc0ae5f10f0393a732b3
 target1.height=50
-target1.name=A
+target1.name=Ozyama_up
 target1.showInterface=false
 target1.type=ClassTarget
-target1.width=80
+target1.width=90
 target1.x=0
 target1.y=0
 target2.height=50
-target2.name=B
+target2.name=A
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
-target3.name=C
+target3.name=B
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=MyWorld
+=======
+target4.name=C
+>>>>>>> b95dfbc311a888923a4ebc0ae5f10f0393a732b3
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
+<<<<<<< HEAD
 target5.name=Ryu
+=======
+target5.name=D
+>>>>>>> b95dfbc311a888923a4ebc0ae5f10f0393a732b3
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
+target6.height=50
+target6.name=Ozyama
+target6.showInterface=false
+target6.type=ClassTarget
+target6.width=80
+target6.x=0
+target6.y=0
+target7.height=50
+target7.name=MyWorld
+target7.showInterface=false
+target7.type=ClassTarget
+target7.width=80
+target7.x=0
+target7.y=0
 version=3.0.0
-width=825
+width=1047
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=823
 yPosition=138
+=======
+xPosition=801
+yPosition=205
+>>>>>>> b95dfbc311a888923a4ebc0ae5f10f0393a732b3
