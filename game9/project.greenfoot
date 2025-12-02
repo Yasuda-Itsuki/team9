@@ -2,10 +2,12 @@
 class.A.image=snowman.png
 class.B.image=smiley2.png
 class.C.image=turtle2.png
+class.D.image=baby1.png
 class.Goku.image=Goku.png
 class.MyWorld.image=bg_unkai_yama.jpg
 class.Ozyama.image=ozyama_storn.png
 class.Ozyama_up.image=ozyama_stone_up.png
+class.Ryu.image=Ryu.png
 dependency1.from=MyWorld
 dependency1.to=Goku
 dependency1.type=UsesDependency
@@ -15,6 +17,7 @@ dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=Ozyama_up
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 dependency4.from=Ozyama_up
 dependency4.to=Goku
 dependency4.type=UsesDependency
@@ -28,6 +31,15 @@ editor.fx.0.y=219
 height=691
 package.numDependencies=5
 package.numTargets=8
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=691
+package.numDependencies=3
+package.numTargets=9
+>>>>>>> 47edecaf28235a485478a9931f38fc96d9c47791
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -41,7 +53,11 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
+<<<<<<< HEAD
 simulation.speed=52
+=======
+simulation.speed=50
+>>>>>>> 47edecaf28235a485478a9931f38fc96d9c47791
 target1.height=50
 target1.name=Ozyama_up
 target1.showInterface=false
@@ -98,8 +114,20 @@ target8.type=ClassTarget
 target8.width=80
 target8.x=0
 target8.y=0
+target9.height=50
+target9.name=Ryu
+target9.showInterface=false
+target9.type=ClassTarget
+target9.width=80
+target9.x=0
+target9.y=0
 version=3.0.0
-width=1047
+width=1038
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=778
 yPosition=227
+=======
+xPosition=447
+yPosition=270
+>>>>>>> 47edecaf28235a485478a9931f38fc96d9c47791
