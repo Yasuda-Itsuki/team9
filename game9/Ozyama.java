@@ -21,6 +21,12 @@ public class Ozyama extends Actor
         if (x == 0) {
         getWorld().removeObject(this);
     }
+    
+    Actor actor = getOneIntersectingObject( Goku.class );
+    if( actor != null ){
+    getWorld().showText( "GAME OVER", 400, 200 );
+    Greenfoot.stop();
+}  
 
     }    
 }

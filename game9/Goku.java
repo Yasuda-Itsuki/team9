@@ -24,6 +24,12 @@ public class Goku extends Actor
         int currentB = getY(); // 現在のY座標を取得
         int up = -8;         // 上に移動する速度（ピクセル数）
         setLocation(currentA, currentB + up);
-        }    
-    }
+        }
+   
+    }    
+
+
+    
+    
+
 }
