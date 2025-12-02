@@ -18,7 +18,7 @@ public class MyWorld extends World
         super(800, 450, 1);
         showText( "SCORE", 600, 15 );
         
-        addObject( new Goku(), 400,200);
+        addObject( new Goku(), 300,200);
     }
         public void act() {
         
