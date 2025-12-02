@@ -15,12 +15,6 @@ public class Ozyama_up extends Actor
     public void act() 
     {
         move(-3);
-        
-        int x = getX();
-        // x座標が0ならオブジェクトを削除
-        if (x == 0) {
-        getWorld().removeObject(this);
-    }
     
    Actor actor = getOneIntersectingObject( Goku.class );
     if( actor != null ){
@@ -28,5 +22,10 @@ public class Ozyama_up extends Actor
     Greenfoot.stop();
 }  
 
+        int x = getX();
+        // x座標が0ならオブジェクトを削除
+        if (x == 0) {
+        getWorld().removeObject(this);
+    }
     }    
 }
