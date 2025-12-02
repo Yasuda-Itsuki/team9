@@ -8,17 +8,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+    
+    
     private int scorecount = 0;
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
-    public MyWorld()
-    {    
+    public MyWorld(){    
+        
         super(800, 450, 1);
         showText( "SCORE", 600, 15 );
         
         addObject( new Goku(), 400,200);
+        spawnRyu(); // 右の外から出現
     }
         public void act() {
         
@@ -38,4 +41,15 @@ public class MyWorld extends World
         
     }
     
+        public void spawnRyu() {
+        int randomY = Greenfoot.getRandomNumber(450);  // 0〜449 のランダムY
+        Ryu ryu = new Ryu();
+        addObject(ryu, getWidth() + 50, randomY);
+    }
 }
+    
+       
+    
+    
+    
+
