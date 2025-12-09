@@ -21,11 +21,7 @@ public class MyWorld extends World
         showText( "SCORE", 600, 15 );
         
         //Goku初期位置設定・追加
-        addObject( new Goku(), 100,200);
-        addObject( new Goku(), 300,200);
-
-        //Goku初期位置設定・追加
-        addObject( new Goku(), 100,200);
+        addObject( new Goku(), 150,200);
 
         spawnRyu(); // 右の外から出現
 
