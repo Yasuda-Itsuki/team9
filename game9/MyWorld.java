@@ -20,22 +20,16 @@ public class MyWorld extends World
         super(800, 450, 1);
         showText( "SCORE", 600, 15 );
         
-<<<<<<< HEAD
-        addObject( new Goku(), 400,200);
-        spawnRyu(); // 右の外から出現
-=======
-<<<<<<< HEAD
+       
+
         //Goku初期位置設定・追加
         addObject( new Goku(), 100,200);
-=======
-        addObject( new Goku(), 300,200);
->>>>>>> 47edecaf28235a485478a9931f38fc96d9c47791
->>>>>>> e80212fa6f056011bc3ec28ce08a62e349c14021
+        
     }
         public void act() {
         
         // ランダムにOzyamaを追加（毎フレーム1/100の確率）
-        if (Greenfoot.getRandomNumber(100) == 0) {
+        if (Greenfoot.getRandomNumber(300) == 0) {
             addObject(new Ozyama(), 800, 440);
         }
         
@@ -44,6 +38,9 @@ public class MyWorld extends World
             addObject(new Ozyama_up(), 800, 0);
         }
         
+        if (Greenfoot.getRandomNumber(100) == 0) { 
+           spawnRyu();
+        }
         scorecount++;
         
         showText(""+scorecount, 700,15);
