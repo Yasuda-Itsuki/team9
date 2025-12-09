@@ -20,18 +20,10 @@ public class MyWorld extends World
         super(800, 450, 1);
         showText( "SCORE", 600, 15 );
         
-
-       
-
+  
         //Goku初期位置設定・追加
         addObject( new Goku(), 100,200);
-      
-        
-        
-       
-
-
-
+          
 
     }
         public void act() {
@@ -47,8 +39,7 @@ public class MyWorld extends World
             addObject(new Ozyama_up(), 800, 0);
         } 
         
-       
-        
+         
          if (scorecount > 0 && scorecount % 500 == 0) {
             spawnRyu();
         }
@@ -60,7 +51,7 @@ public class MyWorld extends World
     }
     
         public void spawnRyu() {
-        int randomY = Greenfoot.getRandomNumber(450);  
+        int randomY = Greenfoot.getRandomNumber(450); 
         Ryu ryu = new Ryu();
         addObject(ryu, getWidth() + 50, randomY);
     }
