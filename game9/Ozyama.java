@@ -15,18 +15,18 @@ public class Ozyama extends Actor
     public void act() 
     {
         move(-3);
-        
-        int x = getX();
-        // x座標が0ならオブジェクトを削除
-        if (x == 0) {
-        getWorld().removeObject(this);
-    }
     
     Actor actor = getOneIntersectingObject( Goku.class );
     if( actor != null ){
     getWorld().showText( "GAME OVER", 400, 200 );
     Greenfoot.stop();
 }  
+
+       int x = getX();
+        // x座標が0ならオブジェクトを削除
+        if (x == 0) {
+        getWorld().removeObject(this);
+    }
 
     }    
 }
