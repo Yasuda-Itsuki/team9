@@ -9,6 +9,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     
+    GreenfootImage back;
+    GreenfootImage back_flop;
+    int back_dx = -5; // スクロール速度(マイナスにすると左から右)
+    int back_x = 0;
+    int back_width;
+    boolean flop = false;
     
     private int scorecount = 0;
     /**
@@ -16,8 +22,11 @@ public class MyWorld extends World
      * 
      */
     public MyWorld(){    
+        super(800, 450, 1); // 画像サイズをセットする
+        back = new GreenfootImage( "./images/bg_unkai_yama.jpg" );
+        back_flop = new GreenfootImage( "./images/bg_unkai_yama_hanten.jpg" );
+        back_width = back.getWidth();
         
-        super(800, 450, 1);
         showText( "SCORE", 600, 15 );
         
   
@@ -27,6 +36,18 @@ public class MyWorld extends World
 
     }
         public void act() {
+        //背景の動きの追加
+        back_x += back_dx;
+        if( back_x > 0){
+            back_x -= back_width;
+            flop = !flop;
+        }
+        if( back_x < -back_width ){
+            back_x += back_width;
+            flop = !flop;
+        }
+        getBackground().drawImage( flop ? back_flop : back, back_x, 0 );
+        getBackground().drawImage( flop ? back : back_flop, back_x+back_width, 0 );   
         
         
         // ランダムにOzyamaを追加（毎フレーム1/100の確率）
@@ -48,13 +69,13 @@ public class MyWorld extends World
         
         showText(""+scorecount, 700,15);
         
-    }
+        }
     
         public void spawnRyu() {
         int randomY = Greenfoot.getRandomNumber(450); 
         Ryu ryu = new Ryu();
         addObject(ryu, getWidth() + 50, randomY);
-    }
+        }
 }
     
        
