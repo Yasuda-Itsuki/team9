@@ -19,14 +19,9 @@ public class Goku extends Actor
         int currentA = getX(); // 現在のX座標を取得
         int currentB = getY(); // 現在のY座標を取得
         int up = -8;         // 上に移動する速度（ピクセル数）
-<<<<<<< HEAD
-        setLocation(currentA, currentB + up);*/
-    }
-=======
         setLocation(currentA, currentB + up);
-        }
-        
-         if (isTouching(banana.class)) {
+    }  */ 
+    if (isTouching(banana.class)) {
             // 触れているbananaを削除
             removeTouching(banana.class);
 
@@ -44,6 +39,6 @@ public class Goku extends Actor
             // 自分（Goku）を削除
             world.removeObject(this);
         }
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
    
+    }
 }

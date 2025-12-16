@@ -10,23 +10,19 @@ public class Ryu extends Actor
 {   
     public void act() 
     {
-<<<<<<< HEAD
         move(-6);
 
-        Actor actor = getOneIntersectingObject( hantei.class );
-=======
         int randomSpeed = Greenfoot.getRandomNumber(10);
         move(-randomSpeed);
         
         
-        Actor actor = getOneIntersectingObject( Goku.class );
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+        Actor actor = getOneIntersectingObject( hantei.class );
         if( actor != null ){
             getWorld().showText( "GAME OVER", 400, 200 );
             Greenfoot.stop();
         }
         
-        Actor Super_actor = getOneIntersectingObject( SuperGoku.class );
+        Actor Super_actor = getOneIntersectingObject( hantei.class );
         if( Super_actor != null ){
             getWorld().showText( "GAME OVER", 400, 200 );
             Greenfoot.stop();

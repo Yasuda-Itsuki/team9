@@ -7,39 +7,36 @@ class.MyWorld.image=bg_unkai_yama.jpg
 class.Ozyama.image=ozyama_storn.png
 class.Ozyama_up.image=ozyama_stone_up.png
 class.Ryu.image=Ryu.png
-<<<<<<< HEAD
+class.SuperGoku.image=goku(kari).png
+class.TitleLogo.image=title\ (1).png
+class.banana.image=fruit_banana.png
 class.hantei.image=hantei.png
 dependency1.from=MyWorld
-dependency1.to=hantei
-=======
-class.SuperGoku.image=Goku.png
-class.TitleLogo.image=ChatGPT_Image_2025\u5E7412\u670816\u65E5_10_01_46-removebg-preview.png
-class.banana.image=fruit_banana.png
-dependency1.from=MyWorld
 dependency1.to=TitleLogo
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
 dependency1.type=UsesDependency
-dependency10.from=SuperGoku
-dependency10.to=banana
+dependency10.from=Ryu
+dependency10.to=hantei
 dependency10.type=UsesDependency
-dependency11.from=SuperGoku
-dependency11.to=Ozyama
+dependency11.from=Goku
+dependency11.to=SuperGoku
 dependency11.type=UsesDependency
-dependency12.from=SuperGoku
-dependency12.to=Ozyama_up
+dependency12.from=Goku
+dependency12.to=banana
 dependency12.type=UsesDependency
-dependency13.from=Ozyama
-dependency13.to=Goku
+dependency13.from=SuperGoku
+dependency13.to=banana
 dependency13.type=UsesDependency
-dependency14.from=Ryu
-<<<<<<< HEAD
-dependency14.to=Goku
-=======
-dependency14.to=SuperGoku
->>>>>>> 1811ff2f67418465ad77cbaae896efb85df8ab85
+dependency14.from=SuperGoku
+dependency14.to=Ozyama
 dependency14.type=UsesDependency
+dependency15.from=SuperGoku
+dependency15.to=Ozyama_up
+dependency15.type=UsesDependency
+dependency16.from=Ozyama
+dependency16.to=hantei
+dependency16.type=UsesDependency
 dependency2.from=MyWorld
-dependency2.to=Goku
+dependency2.to=hantei
 dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=Ozyama
@@ -48,59 +45,27 @@ dependency4.from=MyWorld
 dependency4.to=Ozyama_up
 dependency4.type=UsesDependency
 dependency5.from=MyWorld
-<<<<<<< HEAD
-dependency5.to=Goku
+dependency5.to=Ryu
 dependency5.type=UsesDependency
-dependency6.from=Ozyama_up
-dependency6.to=hantei
+dependency6.from=MyWorld
+dependency6.to=banana
 dependency6.type=UsesDependency
-dependency7.from=hantei
+dependency7.from=MyWorld
 dependency7.to=Goku
 dependency7.type=UsesDependency
-dependency8.from=Ozyama
+dependency8.from=Ozyama_up
 dependency8.to=hantei
 dependency8.type=UsesDependency
-dependency9.from=Ryu
-dependency9.to=hantei
+dependency9.from=hantei
+dependency9.to=Goku
 dependency9.type=UsesDependency
 editor.fx.0.height=749
 editor.fx.0.width=816
 editor.fx.0.x=930
 editor.fx.0.y=59
 height=691
-package.numDependencies=9
-package.numTargets=10
-=======
-dependency5.to=Ryu
-dependency5.type=UsesDependency
-dependency6.from=MyWorld
-dependency6.to=banana
-dependency6.type=UsesDependency
-dependency7.from=Ozyama_up
-dependency7.to=Goku
-dependency7.type=UsesDependency
-dependency8.from=Goku
-dependency8.to=SuperGoku
-dependency8.type=UsesDependency
-dependency9.from=Goku
-dependency9.to=banana
-dependency9.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=635
-=======
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=1102
-editor.fx.0.y=118
-height=783
->>>>>>> 1811ff2f67418465ad77cbaae896efb85df8ab85
-package.numDependencies=14
-package.numTargets=11
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+package.numDependencies=16
+package.numTargets=13
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -114,7 +79,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=56
+simulation.speed=50
 target1.height=50
 target1.name=banana
 target1.showInterface=false
@@ -123,26 +88,33 @@ target1.width=80
 target1.x=0
 target1.y=0
 target10.height=50
-<<<<<<< HEAD
-target10.name=Ryu
-=======
-target10.name=MyWorld
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+target10.name=Goku
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=80
 target10.x=0
 target10.y=0
-<<<<<<< HEAD
-=======
 target11.height=50
-target11.name=Ryu
+target11.name=SuperGoku
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=80
 target11.x=0
 target11.y=0
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+target12.height=50
+target12.name=Ozyama
+target12.showInterface=false
+target12.type=ClassTarget
+target12.width=80
+target12.x=0
+target12.y=0
+target13.height=50
+target13.name=MyWorld
+target13.showInterface=false
+target13.type=ClassTarget
+target13.width=80
+target13.x=0
+target13.y=0
 target2.height=50
 target2.name=Ozyama_up
 target2.showInterface=false
@@ -151,85 +123,56 @@ target2.width=90
 target2.x=0
 target2.y=0
 target3.height=50
-<<<<<<< HEAD
-target3.name=hantei
-=======
 target3.name=A
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-target4.name=B
+target4.name=hantei
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
 target5.height=50
-<<<<<<< HEAD
-target5.name=C
-=======
-target5.name=TitleLogo
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+target5.name=B
 target5.showInterface=false
 target5.type=ClassTarget
 target5.width=80
 target5.x=0
 target5.y=0
 target6.height=50
-<<<<<<< HEAD
-target6.name=Goku
-=======
-target6.name=C
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+target6.name=TitleLogo
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=80
 target6.x=0
 target6.y=0
 target7.height=50
-<<<<<<< HEAD
-target7.name=D
-=======
-target7.name=Goku
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+target7.name=C
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=80
 target7.x=0
 target7.y=0
 target8.height=50
-<<<<<<< HEAD
-target8.name=Ozyama
-=======
-target8.name=SuperGoku
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+target8.name=D
 target8.showInterface=false
 target8.type=ClassTarget
 target8.width=80
 target8.x=0
 target8.y=0
 target9.height=50
-<<<<<<< HEAD
-target9.name=MyWorld
-=======
-target9.name=Ozyama
->>>>>>> 6b0d2f57f18af6060be0416d343dcdc41836474b
+target9.name=Ryu
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
-width=1055
+width=1038
 world.lastInstantiated=MyWorld
-<<<<<<< HEAD
-xPosition=792
-yPosition=200
-=======
-xPosition=85
-yPosition=155
->>>>>>> 1811ff2f67418465ad77cbaae896efb85df8ab85
+xPosition=696
+yPosition=280

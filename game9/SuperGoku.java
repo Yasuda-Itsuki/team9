@@ -17,16 +17,13 @@ public class SuperGoku extends Actor
     
     public void act() 
     {
-        int currentX = getX(); // Gokuと同じ
-        int currentY = getY(); // 
-        int down = 4;         // 
-        setLocation(currentX, currentY + down); 
-        
-        if (Greenfoot.isKeyDown("space")){
-        int currentA = getX(); //
-        int currentB = getY(); // 
-        int up = -8;         // 
-        setLocation(currentA, currentB + up);
+        int x = getX();
+        int y = getY();
+        if( Greenfoot.isKeyDown( "up" ) ){
+            setLocation( x,y-5 );
+        }
+        if( Greenfoot.isKeyDown( "down" ) ){
+            setLocation( x,y+5 );
         }
         
          if (isTouching(banana.class)) {
