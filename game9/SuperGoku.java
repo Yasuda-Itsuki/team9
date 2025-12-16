@@ -12,6 +12,9 @@ public class SuperGoku extends Actor
      * Act - do whatever the SuperGoku wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
+    private long startTimeMillis;
+    
     public void act() 
     {
         int currentX = getX(); // Gokuと同じ
@@ -34,13 +37,16 @@ public class SuperGoku extends Actor
             if (isTouching(Ozyama.class)) {
             
             removeTouching(Ozyama.class);
+            Greenfoot.playSound( "bakuhatsu.wav" );
         
         }
         
              if (isTouching(Ozyama_up.class)) {
             
             removeTouching(Ozyama_up.class);
+            Greenfoot.playSound( "bakuhatsu.wav" );
             
     }
+
 }
 }
