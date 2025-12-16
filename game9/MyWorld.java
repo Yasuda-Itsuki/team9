@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-    
+    GreenfootSound bgm = null;
     GreenfootImage back;
     GreenfootImage back_flop;
     int back_dx = -5; // スクロール速度(マイナスにすると左から右)
@@ -23,6 +23,7 @@ public class MyWorld extends World
      */
     public MyWorld(){    
         super(800, 450, 1); // 画像サイズをセットする
+        bgm = new GreenfootSound( "china.mp3" );
         back = new GreenfootImage( "./images/bg_unkai_yama.jpg" );
         back_flop = new GreenfootImage( "./images/bg_unkai_yama_hanten.jpg" );
         back_width = back.getWidth();
@@ -76,6 +77,14 @@ public class MyWorld extends World
         Ryu ryu = new Ryu();
         addObject(ryu, getWidth() + 50, randomY);
         }
+        
+         public void started(){
+             bgm.playLoop();
+         }
+    
+         public void stopped(){
+             bgm.stop();
+         }
 }
     
        
