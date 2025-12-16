@@ -16,6 +16,8 @@ public class MyWorld extends World
     int back_width;
     boolean flop = false;
     
+    public Actor titlelogo = null;
+     
     private int scorecount = 0;
     /**
      * Constructor for objects of class MyWorld.
@@ -24,6 +26,10 @@ public class MyWorld extends World
     public MyWorld(){    
         super(800, 450, 1); // 画像サイズをセットする
         bgm = new GreenfootSound( "china.mp3" );
+        
+        titlelogo = new TitleLogo();
+        addObject(titlelogo,400,170);
+         
         back = new GreenfootImage( "./images/bg_unkai_yama.jpg" );
         back_flop = new GreenfootImage( "./images/bg_unkai_yama_hanten.jpg" );
         back_width = back.getWidth();
@@ -37,6 +43,13 @@ public class MyWorld extends World
     }
 
         public void act() {
+        
+       
+        if(titlelogo != null){
+            removeObject(titlelogo);
+            titlelogo = null;
+        }    
+            
         //背景の動きの追加
         back_x += back_dx;
         if( back_x > 0){
