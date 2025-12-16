@@ -35,14 +35,8 @@ public class MyWorld extends World
         //Goku初期位置設定・追加
         addObject( new Goku(), 100,200);
       
-        
-        
-       
-
-
-
-
     }
+
         public void act() {
         //背景の動きの追加
         back_x += back_dx;
@@ -73,6 +67,10 @@ public class MyWorld extends World
          if (scorecount > 0 && scorecount % 500 == 0) {
             spawnRyu();
         }
+        
+         if (scorecount > 0 && scorecount % 700 == 0) {
+            spawnbanana();
+        }
         scorecount++;
         
         
@@ -84,6 +82,11 @@ public class MyWorld extends World
         int randomY = Greenfoot.getRandomNumber(450);  
         Ryu ryu = new Ryu();
         addObject(ryu, getWidth() + 50, randomY);
+        }
+        
+             public void spawnbanana() {  
+        banana Banana = new banana();
+        addObject(Banana, getWidth() + 50, 200);
         }
 }
     
