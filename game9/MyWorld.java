@@ -29,9 +29,10 @@ public class MyWorld extends World
         
         showText( "SCORE", 600, 15 );
         
+        
   
-        //Goku初期位置設定・追加
-        addObject( new Goku(), 100,200);
+       
+       
           
 
     }
