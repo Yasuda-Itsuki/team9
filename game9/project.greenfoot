@@ -26,7 +26,11 @@ dependency13.from=Ozyama
 dependency13.to=Goku
 dependency13.type=UsesDependency
 dependency14.from=Ryu
+<<<<<<< HEAD
 dependency14.to=Goku
+=======
+dependency14.to=SuperGoku
+>>>>>>> 1811ff2f67418465ad77cbaae896efb85df8ab85
 dependency14.type=UsesDependency
 dependency2.from=MyWorld
 dependency2.to=Goku
@@ -52,11 +56,19 @@ dependency8.type=UsesDependency
 dependency9.from=Goku
 dependency9.to=banana
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
 height=635
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=1102
+editor.fx.0.y=118
+height=783
+>>>>>>> 1811ff2f67418465ad77cbaae896efb85df8ab85
 package.numDependencies=14
 package.numTargets=11
 project.charset=UTF-8
@@ -72,7 +84,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=52
+simulation.speed=56
 target1.height=50
 target1.name=banana
 target1.showInterface=false
@@ -153,5 +165,10 @@ target9.y=0
 version=3.0.0
 width=1055
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=792
 yPosition=200
+=======
+xPosition=85
+yPosition=155
+>>>>>>> 1811ff2f67418465ad77cbaae896efb85df8ab85

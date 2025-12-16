@@ -18,6 +18,12 @@ public class Ryu extends Actor
         if( actor != null ){
             getWorld().showText( "GAME OVER", 400, 200 );
             Greenfoot.stop();
+        }
+        
+        Actor Super_actor = getOneIntersectingObject( SuperGoku.class );
+        if( Super_actor != null ){
+            getWorld().showText( "GAME OVER", 400, 200 );
+            Greenfoot.stop();
         }  
 
         int x = getX();
