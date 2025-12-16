@@ -10,8 +10,10 @@ public class Ryu extends Actor
 {   
     public void act() 
     {
-        move(-6);
-
+        int randomSpeed = Greenfoot.getRandomNumber(10);
+        move(-randomSpeed);
+        
+        
         Actor actor = getOneIntersectingObject( Goku.class );
         if( actor != null ){
             getWorld().showText( "GAME OVER", 400, 200 );

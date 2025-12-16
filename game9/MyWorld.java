@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-    
+    GreenfootSound bgm = null;
     GreenfootImage back;
     GreenfootImage back_flop;
     int back_dx = -5; // スクロール速度(マイナスにすると左から右)
@@ -23,18 +23,17 @@ public class MyWorld extends World
      */
     public MyWorld(){    
         super(800, 450, 1); // 画像サイズをセットする
+        bgm = new GreenfootSound( "china.mp3" );
         back = new GreenfootImage( "./images/bg_unkai_yama.jpg" );
         back_flop = new GreenfootImage( "./images/bg_unkai_yama_hanten.jpg" );
         back_width = back.getWidth();
         
         showText( "SCORE", 600, 15 );
         
-
-       
-
+  
         //Goku初期位置設定・追加
         addObject( new Goku(), 100,200);
-      
+
     }
 
         public void act() {
@@ -62,8 +61,7 @@ public class MyWorld extends World
             addObject(new Ozyama_up(), 800, 0);
         } 
         
-       
-        
+         
          if (scorecount > 0 && scorecount % 500 == 0) {
             spawnRyu();
         }
@@ -79,15 +77,24 @@ public class MyWorld extends World
         }
     
         public void spawnRyu() {
-        int randomY = Greenfoot.getRandomNumber(450);  
+        int randomY = Greenfoot.getRandomNumber(450); 
         Ryu ryu = new Ryu();
         addObject(ryu, getWidth() + 50, randomY);
         }
         
+
              public void spawnbanana() {  
         banana Banana = new banana();
         addObject(Banana, getWidth() + 50, 200);
         }
+
+         public void started(){
+             bgm.playLoop();
+         }
+    
+         public void stopped(){
+             bgm.stop();
+         }
 }
     
        
