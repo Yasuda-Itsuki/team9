@@ -28,20 +28,14 @@ public class MyWorld extends World
         back_width = back.getWidth();
         
         showText( "SCORE", 600, 15 );
+        showText( "  ↑　上昇", 60, 15 );
+        showText( "  ↓　下降", 60, 45 );
         
 
        
 
-        //Goku初期位置設定・追加
-        addObject( new Goku(), 100,200);
-      
-        
-        
-       
-
-
-
-
+        addObject( new hantei(), 100, 200 );
+        setActOrder(Goku.class, hantei.class);
     }
         public void act() {
         //背景の動きの追加
@@ -68,13 +62,10 @@ public class MyWorld extends World
             addObject(new Ozyama_up(), 800, 0);
         } 
         
-       
-        
          if (scorecount > 0 && scorecount % 500 == 0) {
             spawnRyu();
         }
-        scorecount++;
-        
+        scorecount++; 
         
         showText(""+scorecount, 700,15);
         
