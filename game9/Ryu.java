@@ -10,11 +10,23 @@ public class Ryu extends Actor
 {   
     public void act() 
     {
+        move(-6);
+
         int randomSpeed = Greenfoot.getRandomNumber(10);
         move(-randomSpeed);
         
+        Actor actor = getOneIntersectingObject( hantei.class );
+        if( actor != null ){
+            getWorld().showText( "GAME OVER", 400, 200 );
+            Greenfoot.stop();
+        }
         
-       
+        Actor Super_actor = getOneIntersectingObject( SuperGoku.class );
+        if( Super_actor != null ){
+            getWorld().showText( "GAME OVER", 400, 200 );
+            Greenfoot.stop();
+        } 
+
         int x = getX();
         // x座標が0ならオブジェクトを削除
         if (x == 0) {

@@ -11,7 +11,7 @@ public class Ozyama extends Actor
     
     public Ozyama() {
         GreenfootImage img = getImage();
-        int scale = 100 + Greenfoot.getRandomNumber(101); // 50〜150%
+        int scale = 50+ Greenfoot.getRandomNumber(100); // 50〜150%
         img.scale(img.getWidth() * scale / 100, img.getHeight() * scale / 100);
         setImage(img);
     }
@@ -24,7 +24,15 @@ public class Ozyama extends Actor
     public void act() 
     {
         move(-3);
-        int x = getX();
+
+        Actor actor = getOneIntersectingObject( hantei.class );
+    if( actor != null ){
+    getWorld().showText( "GAME OVER", 400, 200 );
+    Greenfoot.stop();
+}  
+
+       int x = getX();
+
         // x座標が0ならオブジェクトを削除
         if (x == 0) {
         getWorld().removeObject(this);

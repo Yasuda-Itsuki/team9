@@ -10,7 +10,7 @@ public class Ozyama_up extends Actor
 {
     public Ozyama_up(){
     GreenfootImage img = getImage();
-    int scale = 100 + Greenfoot.getRandomNumber(100); // 60〜140%
+    int scale = 80 + Greenfoot.getRandomNumber(100); // 60〜140%
     img.scale(img.getWidth() * scale / 100, img.getHeight() * scale / 100);
     setImage(img);
 }
@@ -20,7 +20,12 @@ public class Ozyama_up extends Actor
      */
     public void act() 
     {
-        move(-3);
+     move(-3);
+     Actor actor = getOneIntersectingObject( hantei.class );
+    if( actor != null ){
+    getWorld().showText( "GAME OVER", 400, 200 );
+    Greenfoot.stop();
+}  
         int x = getX();
         // x座標が0ならオブジェクトを削除
         if (x == 0) {
