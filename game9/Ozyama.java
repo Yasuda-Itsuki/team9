@@ -11,7 +11,7 @@ public class Ozyama extends Actor
     
     public Ozyama() {
         GreenfootImage img = getImage();
-        int scale = 50+ Greenfoot.getRandomNumber(100); // 50〜150%
+        int scale = 50+ Greenfoot.getRandomNumber(60); // 50〜150%
         img.scale(img.getWidth() * scale / 100, img.getHeight() * scale / 100);
         setImage(img);
     }

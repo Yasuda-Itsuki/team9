@@ -10,7 +10,7 @@ public class Ryu extends Actor
 {   
     public void act() 
     {
-        move(-6);
+        move(-4);
 
         int randomSpeed = Greenfoot.getRandomNumber(10);
         move(-randomSpeed);
