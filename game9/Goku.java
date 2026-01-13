@@ -18,7 +18,7 @@ public class Goku extends Actor
 
     public void act() 
     {
-        int currentX = getX(); // 現在のX座標を取得
+        /*int currentX = getX(); // 現在のX座標を取得
         int currentY = getY(); // 現在のY座標を取得
         int down = 4;         // 下に移動する速度（ピクセル数）
         setLocation(currentX, currentY + down); 
@@ -30,11 +30,7 @@ public class Goku extends Actor
 
 
         setLocation(currentA, currentB + up);
-         
-       if (isTouching (banana.class)) 
-          {
-           setLocation(currentA, currentB + up);
-          }   
+        */    
        if (isTouching(banana.class)) 
           {
 
@@ -58,12 +54,11 @@ public class Goku extends Actor
 
 
 
-    }    
+    
 
 
 
    
     }
-
 }
 
