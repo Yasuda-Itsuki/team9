@@ -8,6 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Ozyama extends Actor
 {
+    
+    public Ozyama() {
+        GreenfootImage img = getImage();
+        int scale = 50+ Greenfoot.getRandomNumber(60); // 50〜150%
+        img.scale(img.getWidth() * scale / 100, img.getHeight() * scale / 100);
+        setImage(img);
+    }
+
+    
     /**
      * Act - do whatever the Ozyama wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,11 +26,16 @@ public class Ozyama extends Actor
     public void act() 
     {
         move(-3);
+<<<<<<< HEAD
         
         
       
         
     Actor actor = getOneIntersectingObject( Goku.class );
+=======
+
+        Actor actor = getOneIntersectingObject( hantei.class );
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
     if( actor != null ){
     getWorld().showText( "GAME OVER", 400, 200 );
     Greenfoot.stop();
@@ -30,6 +44,7 @@ public class Ozyama extends Actor
 }  
 
        int x = getX();
+
         // x座標が0ならオブジェクトを削除
         if (x == 0) {
         getWorld().removeObject(this);

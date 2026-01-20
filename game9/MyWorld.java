@@ -38,15 +38,28 @@ public class MyWorld extends World
 
         
         showText( "SCORE", 600, 15 );
+<<<<<<< HEAD
         
         
+=======
+        showText( "  ↑　上昇", 60, 15 );
+        showText( "  ↓　下降", 60, 45 );
+
+
+    
+
+        addObject( new hantei(), 100, 200 );
+        setActOrder(Goku.class, hantei.class);
+
+
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
   
         //Goku初期位置設定・追加
-        addObject( new Goku(), 100,200);
+        //addObject( new Goku(), 100,200);
+
 
     }
-
-        public void act() {
+    public void act() {
         
        
         if(titlelogo != null){
@@ -81,7 +94,7 @@ public class MyWorld extends World
             addObject(new Ozyama_up(), 800, 0);
         } 
         
-         
+
          if (scorecount > 0 && scorecount % 500 == 0) {
             spawnRyu();
         }
@@ -91,22 +104,25 @@ public class MyWorld extends World
         }
         scorecount++;
         
+<<<<<<< HEAD
         
         if (scorecount > highScore) {
             highScore = scorecount;
         }
+=======
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 
         showText(""+scorecount, 700,15);
        
         
         
         
-        }
-    
-        public void spawnRyu() {
+    }
+    public void spawnRyu() {
         int randomY = Greenfoot.getRandomNumber(450); 
         Ryu ryu = new Ryu();
         addObject(ryu, getWidth() + 50, randomY);
+<<<<<<< HEAD
         }
         
 
@@ -123,6 +139,19 @@ public class MyWorld extends World
              bgm.stop();
          }
          
+=======
+    }
+    public void spawnbanana() {  
+        banana Banana = new banana();
+        addObject(Banana, getWidth() + 50, 200);
+    }
+    public void started(){
+         bgm.playLoop();
+    }
+    public void stopped(){
+         bgm.stop();
+    }
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 }
     
        

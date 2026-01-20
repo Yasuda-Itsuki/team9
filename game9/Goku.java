@@ -8,10 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Goku extends Actor
 {
+
+    
     /**
      * Act - do whatever the Goku wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+<<<<<<< HEAD
     public static boolean isGameOver = false;
 
   
@@ -25,6 +28,13 @@ public class Goku extends Actor
         }
         
         int currentX = getX(); // 現在のX座標を取得
+=======
+        
+
+    public void act() 
+    {
+        /*int currentX = getX(); // 現在のX座標を取得
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
         int currentY = getY(); // 現在のY座標を取得
         int down = 4;         // 下に移動する速度（ピクセル数）
         setLocation(currentX, currentY + down); 
@@ -33,10 +43,13 @@ public class Goku extends Actor
         int currentA = getX(); // 現在のX座標を取得
         int currentB = getY(); // 現在のY座標を取得
         int up = -8;         // 上に移動する速度（ピクセル数）
+
+
         setLocation(currentA, currentB + up);
-        }
-        
-         if (isTouching(banana.class)) {
+        */    
+       if (isTouching(banana.class)) 
+          {
+
             // 触れているbananaを削除
             removeTouching(banana.class);
 
@@ -53,6 +66,7 @@ public class Goku extends Actor
 
             // 自分（Goku）を削除
             world.removeObject(this);
+<<<<<<< HEAD
         }
         
         
@@ -62,4 +76,17 @@ public class Goku extends Actor
     
     
 
+=======
+           }
+
+
+
+    
+
+
+
+   
+    }
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 }
+
