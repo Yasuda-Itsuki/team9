@@ -67,8 +67,13 @@ dependency9.to=Goku
 dependency9.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=929
 editor.fx.0.y=221
+=======
+editor.fx.0.x=552
+editor.fx.0.y=100
+>>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
 height=1056
 package.numDependencies=18
 package.numTargets=12
