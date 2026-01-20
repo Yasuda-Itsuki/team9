@@ -23,15 +23,14 @@ public class Ozyama_up extends Actor
     
     public void act() 
     {
-<<<<<<< HEAD
+
         move(-3);
       
 
-   Actor actor = getOneIntersectingObject( Goku.class );
-=======
-     move(-3);
-     Actor actor = getOneIntersectingObject( hantei.class );
->>>>>>> cac716c305adbb7395504dab165e6db4b6012060
+       
+        move(-3);
+        Actor actor = getOneIntersectingObject( hantei.class );
+
     if( actor != null ){
     getWorld().showText( "GAME OVER", 400, 200 );
     Greenfoot.stop();
