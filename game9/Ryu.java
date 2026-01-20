@@ -11,7 +11,7 @@ public class Ryu extends Actor
     public void act() 
     {
 
-        move(-4);
+      
 
         move(-6);
 

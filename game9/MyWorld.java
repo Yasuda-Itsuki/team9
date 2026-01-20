@@ -74,7 +74,7 @@ public class MyWorld extends World
         
         
         // ランダムにOzyamaを追加（毎フレーム1/100の確率）
-        if (Greenfoot.getRandomNumber(300) == 0) {
+        if (Greenfoot.getRandomNumber(180) == 0) {
             addObject(new Ozyama(), 800, 440);
         }
         
