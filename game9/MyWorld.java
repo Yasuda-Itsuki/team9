@@ -16,9 +16,11 @@ public class MyWorld extends World
     int back_width;
     boolean flop = false;
     
+    
     public Actor titlelogo = null;
      
     private int scorecount = 0;
+    private static int highScore = 0; 
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -28,13 +30,18 @@ public class MyWorld extends World
         bgm = new GreenfootSound( "china.mp3" );
         
         titlelogo = new TitleLogo();
-        addObject(titlelogo,400,170);
-         
-        back = new GreenfootImage( "./images/bg_unkai_yama.jpg" );
-        back_flop = new GreenfootImage( "./images/bg_unkai_yama_hanten.jpg" );
+        addObject(titlelogo,400,200);
+
+        back = new GreenfootImage("bg_unkai_yama.jpg");
+        back_flop = new GreenfootImage("bg_unkai_yama_hanten.jpg");
         back_width = back.getWidth();
+
         
         showText( "SCORE", 600, 15 );
+<<<<<<< HEAD
+        
+        
+=======
         showText( "  ↑　上昇", 60, 15 );
         showText( "  ↓　下降", 60, 45 );
 
@@ -45,6 +52,7 @@ public class MyWorld extends World
         setActOrder(Goku.class, hantei.class);
 
 
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
   
         //Goku初期位置設定・追加
         //addObject( new Goku(), 100,200);
@@ -69,6 +77,9 @@ public class MyWorld extends World
             back_x += back_width;
             flop = !flop;
         }
+        
+        if (back == null || back_flop == null) return;
+
         getBackground().drawImage( flop ? back_flop : back, back_x, 0 );
         getBackground().drawImage( flop ? back : back_flop, back_x+back_width, 0 );   
         
@@ -93,14 +104,42 @@ public class MyWorld extends World
         }
         scorecount++;
         
+<<<<<<< HEAD
+        
+        if (scorecount > highScore) {
+            highScore = scorecount;
+        }
+=======
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 
         showText(""+scorecount, 700,15);
+       
+        
+        
         
     }
     public void spawnRyu() {
         int randomY = Greenfoot.getRandomNumber(450); 
         Ryu ryu = new Ryu();
         addObject(ryu, getWidth() + 50, randomY);
+<<<<<<< HEAD
+        }
+        
+
+        public void spawnbanana() {  
+        banana Banana = new banana();
+        addObject(Banana, getWidth() + 50, 200);
+        }
+
+         public void started(){
+             bgm.playLoop();
+         }
+    
+         public void stopped(){
+             bgm.stop();
+         }
+         
+=======
     }
     public void spawnbanana() {  
         banana Banana = new banana();
@@ -112,6 +151,7 @@ public class MyWorld extends World
     public void stopped(){
          bgm.stop();
     }
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 }
     
        

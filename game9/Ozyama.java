@@ -21,14 +21,26 @@ public class Ozyama extends Actor
      * Act - do whatever the Ozyama wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private boolean isGameOver = false;
+    
     public void act() 
     {
         move(-3);
+<<<<<<< HEAD
+        
+        
+      
+        
+    Actor actor = getOneIntersectingObject( Goku.class );
+=======
 
         Actor actor = getOneIntersectingObject( hantei.class );
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
     if( actor != null ){
     getWorld().showText( "GAME OVER", 400, 200 );
     Greenfoot.stop();
+  
+ 
 }  
 
        int x = getX();

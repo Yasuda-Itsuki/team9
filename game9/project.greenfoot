@@ -7,13 +7,39 @@ class.MyWorld.image=bg_unkai_yama.jpg
 class.Ozyama.image=ozyama_storn.png
 class.Ozyama_up.image=ozyama_stone_up.png
 class.Ryu.image=Ryu.png
+<<<<<<< HEAD
+class.SuperGoku.image=Goku.png
+=======
 class.SuperGoku.image=goku(kari).png
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 class.TitleLogo.image=title\ (1).png
 class.banana.image=fruit_banana.png
 class.hantei.image=hantei.png
 dependency1.from=MyWorld
 dependency1.to=TitleLogo
 dependency1.type=UsesDependency
+<<<<<<< HEAD
+dependency10.from=Goku
+dependency10.to=banana
+dependency10.type=UsesDependency
+dependency11.from=SuperGoku
+dependency11.to=banana
+dependency11.type=UsesDependency
+dependency12.from=SuperGoku
+dependency12.to=Ozyama
+dependency12.type=UsesDependency
+dependency13.from=SuperGoku
+dependency13.to=Ozyama_up
+dependency13.type=UsesDependency
+dependency14.from=Ozyama
+dependency14.to=Goku
+dependency14.type=UsesDependency
+dependency15.from=Ryu
+dependency15.to=Goku
+dependency15.type=UsesDependency
+dependency16.from=Ryu
+dependency16.to=SuperGoku
+=======
 dependency10.from=Ryu
 dependency10.to=hantei
 dependency10.type=UsesDependency
@@ -34,6 +60,7 @@ dependency15.to=Ozyama_up
 dependency15.type=UsesDependency
 dependency16.from=Ozyama
 dependency16.to=hantei
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 dependency16.type=UsesDependency
 dependency2.from=MyWorld
 dependency2.to=hantei
@@ -53,6 +80,21 @@ dependency6.type=UsesDependency
 dependency7.from=MyWorld
 dependency7.to=Goku
 dependency7.type=UsesDependency
+<<<<<<< HEAD
+dependency8.from=Goku
+dependency8.to=MyWorld
+dependency8.type=UsesDependency
+dependency9.from=Goku
+dependency9.to=SuperGoku
+dependency9.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=783
+package.numDependencies=16
+package.numTargets=11
+=======
 dependency8.from=Ozyama_up
 dependency8.to=hantei
 dependency8.type=UsesDependency
@@ -66,6 +108,7 @@ editor.fx.0.y=100
 height=1056
 package.numDependencies=16
 package.numTargets=13
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -174,5 +217,10 @@ target9.y=0
 version=3.0.0
 width=1936
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
+xPosition=85
+yPosition=155
+=======
 xPosition=0
 yPosition=0
+>>>>>>> cac716c305adbb7395504dab165e6db4b6012060
