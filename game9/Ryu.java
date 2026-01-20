@@ -8,22 +8,29 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Ryu extends Actor
 {   
+    private boolean isGameOver = false;
+    
     public void act() 
     {
         int randomSpeed = Greenfoot.getRandomNumber(10);
         move(-randomSpeed);
         
-        
-        Actor actor = getOneIntersectingObject( Goku.class );
+  
+          Actor actor = getOneIntersectingObject( Goku.class );
         if( actor != null ){
+            Goku.isGameOver = true;
             getWorld().showText( "GAME OVER", 400, 200 );
             Greenfoot.stop();
+          
+           
         }
         
         Actor Super_actor = getOneIntersectingObject( SuperGoku.class );
         if( Super_actor != null ){
+            Goku.isGameOver = true;
             getWorld().showText( "GAME OVER", 400, 200 );
             Greenfoot.stop();
+            
         }  
 
         int x = getX();
