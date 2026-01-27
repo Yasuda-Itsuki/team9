@@ -20,7 +20,7 @@ public class MyWorld extends World
     public Actor titlelogo = null;
      
     private int scorecount = 0;
-    private static int highScore = 0; 
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -39,27 +39,17 @@ public class MyWorld extends World
         
         showText( "SCORE", 600, 15 );
 
-<<<<<<< HEAD
-       
-=======
-        
-        
 
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
         showText( "  ↑　上昇", 60, 15 );
         showText( "  ↓　下降", 60, 45 );
 
 
-    
-
         addObject( new hantei(), 100, 200 );
         setActOrder(Goku.class, hantei.class);
-<<<<<<< HEAD
-=======
+        
+        
 
 
-
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
   
         //Goku初期位置設定・追加
         //addObject( new Goku(), 100,200);
@@ -92,7 +82,7 @@ public class MyWorld extends World
         
         
         // ランダムにOzyamaを追加（毎フレーム1/100の確率）
-        if (Greenfoot.getRandomNumber(180) == 0) {
+       if (Greenfoot.getRandomNumber(180) == 0) {
             addObject(new Ozyama(), 800, 440);
         }
         
@@ -110,19 +100,8 @@ public class MyWorld extends World
             spawnbanana();
         }
         scorecount++;
-<<<<<<< HEAD
-=======
-        
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
 
         
-        if (scorecount > highScore) {
-            highScore = scorecount;
-        }
-<<<<<<< HEAD
-=======
-
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
 
         showText(""+scorecount, 700,15);
        
@@ -130,20 +109,21 @@ public class MyWorld extends World
         
         
     }
-    public void spawnRyu() {
-        int randomY = Greenfoot.getRandomNumber(450); 
-        Ryu ryu = new Ryu();
-        addObject(ryu, getWidth() + 50, randomY);
-<<<<<<< HEAD
+        public void spawnRyu() {
+            int randomY = Greenfoot.getRandomNumber(450);
 
+            Ryu ryu = new Ryu();
+            addObject(ryu, getWidth() + 50, randomY);
+
+            ryu_hantei h = new ryu_hantei(ryu);
+            addObject(h, getWidth() + 50, randomY);
+
+            setActOrder(Ryu.class, ryu_hantei.class);
         }
+
+
         
-=======
-    }
-
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
-
-        public void spawnbanana() {  
+          public void spawnbanana() {  
         banana Banana = new banana();
         addObject(Banana, getWidth() + 50, 200);
         }
@@ -156,20 +136,16 @@ public class MyWorld extends World
              bgm.stop();
          }
          
-
-<<<<<<< HEAD
- }
-
-
-
-=======
-    
- 
+        
 
 }
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
-    
-       
+
+
+
+      
+
+
+
     
     
     

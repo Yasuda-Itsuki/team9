@@ -14,13 +14,9 @@ public class Goku extends Actor
      * Act - do whatever the Goku wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-<<<<<<< HEAD
+
 
     public static boolean isGameOver = false;
-=======
-
-    public static boolean isGameOver = false;
-
   
     /*public void act() 
     {   
@@ -35,7 +31,7 @@ public class Goku extends Actor
     }*/
 
         
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
+
 
     public void act() 
     {
@@ -49,10 +45,11 @@ public class Goku extends Actor
         int currentA = getX(); // 現在のX座標を取得
         int currentB = getY(); // 現在のY座標を取得
         int up = -8;         // 上に移動する速度（ピクセル数）
+        }
 
 
         setLocation(currentA, currentB + up);
-<<<<<<< HEAD
+
         */   
         if (isGameOver) {
             if (Greenfoot.isKeyDown("r")) {
@@ -63,10 +60,10 @@ public class Goku extends Actor
         
         int currentX = getX(); // 現在のX座標を取得
        
-=======
-    }
-        */    
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
+
+    
+         
+
        if (isTouching(banana.class)) 
           {
 
@@ -90,18 +87,14 @@ public class Goku extends Actor
         }
         
         
-    }    
-
+    }
+}
 
     
     
 
-<<<<<<< HEAD
 
- }
-=======
 
-           }
 
 
 
@@ -114,5 +107,4 @@ public class Goku extends Actor
 
 
 
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
 

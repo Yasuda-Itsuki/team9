@@ -27,16 +27,15 @@ public class Ozyama_up extends Actor
         move(-3);
       
 
-<<<<<<< HEAD
+
        
         move(-3);
         Actor actor = getOneIntersectingObject( hantei.class );
-=======
-  
+
 
     
-     Actor actor = getOneIntersectingObject( hantei.class );
->>>>>>> ab4c4d6b111d287c64be6489b9e81f9c9679bd24
+     
+
 
     if( actor != null ){
     getWorld().showText( "GAME OVER", 400, 200 );
